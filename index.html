@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPOS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-cash-register"></i>
+                <h2>SmartPOS</h2>
+            </div>
+
+            <ul class="menu">
+
+                <li class="active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Point of Sale</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-box"></i>
+                    <span>Products</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-warehouse"></i>
+                    <span>Inventory</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Sales Reports</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-receipt"></i>
+                    <span>Transactions</span>
+                </li>
+            </ul>
+
+            <div class="sidebar-bottom">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h2>Dashboard</h2>
+                    <p>Welcome back to SmartPOS!</p>
+                </div>
+                <div class="profile">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="avatar">A</div>
+                    <span>Admin</span>
+                </div>
+            </header>
+
+            <section class="stats">
+
+                <div class="card">
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <p>Total Sales</p>
+                    <h2>Rs. 45,000</h2>
+                    <small>Today's sales</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-money-bill"></i>
+                    </div>
+                    <p>Total Revenue</p>
+                    <h2>Rs. 120,000</h2>
+                    <small>Total revenue</small>
+                </div>
+
+                 <div class="card">
+                    <div class="card-icon orange">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                    <p>Total Products</p>
+                    <h2>250</h2>
+                    <small>Available products</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon purple">
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                    <p>Transactions</p>
+                    <h2>85</h2>
+                    <small>Today's orders</small>
+                </div>
+            </section>
+
+
+            <section class="recent-sales">
+                <div class="section-header">
+                    <h2>Recent Sales</h2>
+                    <button>View All</button>
+                </div>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Invoice ID</th>
+                            <th>Date</th>
+                            <th>Customer</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>#INV001</td>
+                            <td>19 Nov 2026</td>
+                            <td>Customer 01</td>
+                            <td>Rs. 2,500</td>
+                            <td><span class="paid">Paid</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#INV002</td>
+                            <td>19 Nov 2026</td>
+                            <td>Customer 02</td>
+                            <td>Rs. 4,000</td>
+                            <td><span class="paid">Paid</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#INV003</td>
+                            <td>19 Nov 2026</td>
+                            <td>Customer 03</td>
+                            <td>Rs. 1,500</td>
+                            <td><span class="pending">Pending</span></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
