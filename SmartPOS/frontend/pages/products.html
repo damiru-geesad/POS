@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | SmartPOS</title>
+
+     <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+         <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-cash-register"></i>
+                <h2>SmartPOS</h2>
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pos.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Point of Sale</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="products.html">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="inventory.html">
+                        <i class="fa-solid fa-warehouse"></i>
+                        <span>Inventory</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="reports.html">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Sales Reports</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="transactions.html">
+                        <i class="fa-solid fa-receipt"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="sidebar-bottom">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+
+                <div>
+                    <h2>Products</h2>
+                    <p>Manage your store products</p>
+                </div>
+
+                <div class="profile">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="avatar">A</div>
+                    <span>Admin</span>
+                </div>
+
+            </header>
+
+            <section class="products-content">
+                <div class="products-header">
+
+                    <div>
+                        <h2>All Products</h2>
+                        <p>View and manage your products</p>
+                    </div>
+
+                    <button class="add-product-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Product
+                    </button>
+
+                </div>
+
+                <div class="product-tools">
+
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search products...">
+                    </div>
+
+                    <select>
+                        <option value="">All Categories</option>
+                        <option>Food</option>
+                        <option>Drinks</option>
+                        <option>Electronics</option>
+                    </select>
+
+                </div>
+
+                <div class="products-table">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Product ID</th>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Stock</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>PRD001</td>
+                                <td>Rice 1kg</td>
+                                <td>Food</td>
+                                <td>Rs. 250.00</td>
+                                <td>50</td>
+                                <td>
+                                    <button class="edit-btn">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="delete-btn">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>PRD002</td>
+                                <td>Milk 1L</td>
+                                <td>Drinks</td>
+                                <td>Rs. 450.00</td>
+                                <td>30</td>
+                                <td>
+                                    <button class="edit-btn">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="delete-btn">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>PRD003</td>
+                                <td>Bread</td>
+                                <td>Food</td>
+                                <td>Rs. 180.00</td>
+                                <td>20</td>
+                                <td>
+                                    <button class="edit-btn">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="delete-btn">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
