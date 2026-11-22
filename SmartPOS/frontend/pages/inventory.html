@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory | SmartPOS</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-cash-register"></i>
+                <h2>SmartPOS</h2>
+            </div>
+            <ul class="menu">
+
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pos.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Point of Sale</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="inventory.html">
+                        <i class="fa-solid fa-warehouse"></i>
+                        <span>Inventory</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="reports.html">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Sales Reports</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="transactions.html">
+                        <i class="fa-solid fa-receipt"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="sidebar-bottom">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </div>
+
+        </aside>
+    
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                   <h2>Inventory</h2>
+                  <p>Manage your product stocks</p>
+                </div>
+
+                <div class="profile">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="avatar">A</div>
+                    <span>Admin</span>
+                </div>
+
+            </header>
+
+            <section class="inventory-stats">
+
+                <div class="card">
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+
+                    <p>Total Stock Items</p>
+                    <h2>250</h2>
+                    <small>All Products</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-check-circle"></i>
+                    </div>
+
+                    <p>In Stock</p>
+                    <h2>220</h2>
+                    <small>Available products</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon orange">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+
+                    <p>Low Stock</p>
+                    <h2>20</h2>
+                    <small>Need resocking</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon purple">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+
+                    <p>Out of Stock</p>
+                    <h2>10</h2>
+                    <small>Unavailable products</small>
+                </div>
+            </section>
+
+            <section class="inventory-section">
+
+                <div class="section-header">
+                    <div>
+                        <h2>Stock Overview</h2>
+                        <p>View and manage product quantities</p>
+                    </div>
+
+                    <button>
+                        <i class="fa-solid fa-plus"></i>
+                        Update Stock
+                    </button>
+                </div>
+
+                <div class="inventory-tools">
+
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search products...">
+                    </div>
+
+                    <select>
+                        <option>All Stock Status</option>
+                        <option>In Stock</option>
+                        <option>Low Stock</option>
+                        <option>Out of Stock</option>
+                    </select>
+                </div>
+
+                <div class="inventory-table">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Product ID</th>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Stock Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>PRD001</td>
+                                <td>Rice 1kg</td>
+                                <td>Food</td>
+                                <td>50</td>
+                                <td><span class="stock-in">In Stock</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>PRD002</td>
+                                <td>Milk 1L</td>
+                                <td>Drinks</td>
+                                <td>5</td>
+                                <td><span class="stock-low">Low Stock</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>PRD003</td>
+                                <td>Bread</td>
+                                <td>Food</td>
+                                <td>0</td>
+                                <td><span class="stock-out">Out of Stock</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>PRD004</td>
+                                <td>Soft Drink</td>
+                                <td>Drinks</td>
+                                <td>35</td>
+                                <td><span class="stock-in">In Stock</span></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
