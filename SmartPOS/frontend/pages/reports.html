@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory | SmartPOS</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-cash-register"></i>
+                <h2>SmartPOS</h2>
+            </div>
+            <ul class="menu">
+
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pos.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Point of Sale</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="inventory.html">
+                        <i class="fa-solid fa-warehouse"></i>
+                        <span>Inventory</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="reports.html">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Sales Reports</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="transactions.html">
+                        <i class="fa-solid fa-receipt"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="sidebar-bottom">
+            <ul class="menu">
+                <li>
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+
+        </aside>
+
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h2>Sales Reports</h2>
+                    <p>Analyze your store sales performance</p>
+                </div>
+
+                <div class="profile">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="avatar">A</div>
+                    <span>Admin</span>
+                </div>
+            </header>
+
+            <section class="report-stats">
+
+                <div class="card">
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+
+                    <p>Total Sales</p>
+                    <h2>Rs. 125,000</h2>
+                    <small>Selected period</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                    <p>Total Orders</p>
+                    <h2>320</h2>
+                    <small>Completed transactions</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon orange">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <p>Average Order</p>
+                    <h2>Rs. 390.63</h2>
+                    <small>Average sale value</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon purple">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                    <p>Products Sold</p>
+                    <h2>580</h2>
+                    <small>Total units sold</small>
+                </div>
+            </section>
+
+            <section class="reports-content">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Sales Overview</h2>
+                        <p>Sales performance summary</p>
+                    </div>
+
+                    <select class="report-filter">
+                        <option>Today</option>
+                        <option>This Week</option>
+                        <option>This Month</option>
+                        <option>This Year</option>
+                    </select>
+                </div>
+
+                <div class="sales-chart-placeholder">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <h3>Sales Chart</h3>
+                    <p>Sales data visualization will appear here</p>
+                </div>
+            </section>
+
+            <div class="reports-content top-products">
+                <h2>Top Selling Products</h2>
+
+                <div class="report-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Products</th>
+                                <th>Uniys Sold</th>
+                                <th>Totol Sales</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                             <tr>
+                            <td>Rice 1kg</td>
+                            <td>120</td>
+                            <td>Rs. 30,000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Milk 1L</td>
+                            <td>95</td>
+                            <td>Rs. 42,750</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bread</td>
+                            <td>80</td>
+                            <td>Rs. 14,400</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

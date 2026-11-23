@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions | SmartPOS</title>
+
+     <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+         <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-cash-register"></i>
+                <h2>SmartPOS</h2>
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pos.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Point of Sale</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="inventory.html">
+                        <i class="fa-solid fa-warehouse"></i>
+                        <span>Inventory</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="reports.html">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Sales Reports</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="transactions.html">
+                        <i class="fa-solid fa-receipt"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="sidebar-bottom">
+            <ul class="menu">
+                <li>
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h2>Transactions</h2>
+                    <p>View and manage all sales transactions</p>
+                </div>
+
+                <div class="profile">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="avatar">A</div>
+                    <span>Admin</span>
+                </div>
+            </header>
+
+            <section class="transaction-stats">
+
+                <div class="card">
+                    <div class="card-icon blue">
+                    <i class="fa-solid fa-receipt"></i>
+                </div>
+                <p>Total Transactions</p>
+                <h2>85</h2>
+                <small>All transactions</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon green">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <p>Completed</p>
+                    <h2>78</h2>
+                    <small>Successful payments</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon orange">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <p>Pending</p>
+                    <h2>5</h2>
+                    <small>Waiting for payment</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon purple">
+                        <i class="fa-solid fa-ban"></i>
+                    </div>
+                  <p>Cancelled</p>
+                  <h2>2</h2>
+                   <small>Cancelled orders</small>
+                </div>
+
+            </section>
+
+            <section class="transactions-content">
+                <div class="section-header">
+
+                    <div>
+                        <h2>All Transactions</h2>
+                        <p>Transation history</p>
+                    </div>
+                </div>
+
+                <div class="transaction-tools">
+
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search invoice or customer...">
+                    </div>
+
+                    <input type="date" class="date-filter">
+
+                    <select>
+                        <option>All Status</option>
+                        <option>Completed</option>
+                        <option>Pending</option>
+                        <option>Canceled</option>
+                    </select>
+                </div>
+
+                <div class="transaction-table">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Invoice ID</th>
+                                <th>Date</th>
+                                <th>Customer</th>
+                                <th>Payment Method</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>#INV001</td>
+                                <td>23 Nov 2026</td>
+                                <td>Customer 01</td>
+                                <td>Cash</td>
+                                <td>Rs. 2,500</td>
+                                <td><span class="completed">Completed</span></td>
+                                <td>
+                                    <button class="view-btn">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#INV002</td>
+                                <td>23 Nov 2026</td>
+                                <td>Customer 02</td>
+                                <td>Card</td>
+                                <td>Rs. 4,000</td>
+                                <td><span class="completed">Completed</span></td>
+                                <td>
+                                    <button class="view-btn">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#INV003</td>
+                                <td>23 Nov 2026</td>
+                                <td>Customer 03</td>
+                                <td>Cash</td>
+                                <td>Rs. 1,500</td>
+                                <td><span class="pending">Pending</span></td>
+                                <td>
+                                    <button class="view-btn">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#INV004</td>
+                                <td>22 Nov 2026</td>
+                                <td>Customer 04</td>
+                                <td>Card</td>
+                                <td>Rs. 3,200</td>
+                                <td><span class="cancelled">Cancelled</span></td>
+                                <td>
+                                    <button class="view-btn">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
