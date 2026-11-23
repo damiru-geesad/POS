@@ -661,3 +661,48 @@ th{
         grid-template-columns: 1fr;
     }
 }
+
+
+
+/* Product Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 12px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.close-btn {
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#productForm {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
