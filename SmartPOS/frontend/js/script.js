@@ -1,3 +1,5 @@
+
+//Product page (Add , Edit, Delete Btns)
 const addProductBtn = document.getElementById("addProductBtn");
 const productModal = document.getElementById("productModal");
 const closeModalBtn = document.getElementById("closeModalBtn");
@@ -105,3 +107,41 @@ productTableBody.addEventListener("click",function(event){
         productModal.style.display = "flex";
     }
 });
+
+//Products page Search and Filter
+
+
+const productSearch = document.getElementById("productSearch");
+const categoryFilter = document.getElementById("categoryFilter");
+
+productSearch.addEventListener("input", filterProducts);
+categoryFilter.addEventListener("change", filterProducts);
+
+function filterProducts() {
+
+    const searchValue = productSearch.value.toLowerCase();
+    const selectedCategory = categoryFilter.value;
+    const rows = productTableBody.querySelectorAll("tr");
+
+    rows.forEach(function(row) {
+
+        const productCode = row.cells[0].textContent.toLowerCase();
+        const productName = row.cells[1].textContent.toLowerCase();
+        const productCategory = row.cells[2].textContent;
+
+        const matchesSearch =
+            productName.includes(searchValue) ||
+            productCode.includes(searchValue);
+
+        const matchesCategory =
+            selectedCategory === "" ||
+            productCategory === selectedCategory;
+
+        if (matchesSearch && matchesCategory) {
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+        }
+
+    });
+}
