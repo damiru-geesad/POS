@@ -706,3 +706,44 @@ th{
     flex-direction: column;
     gap: 18px;
 }
+
+
+
+/* Barcode Scanner */
+
+.barcode-search {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    max-width: 450px;
+}
+
+.barcode-search label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #172554;
+}
+
+.barcode-search label i {
+    margin-right: 8px;
+    color: #2563eb;
+}
+
+.barcode-search input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.barcode-search input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
